@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+		>
+	<item
+			android:id="@+id/action_favorites"
+			android:enabled="true"
+			android:icon="@mipmap/ic_launcher"
+			android:title="1st option"
+			/>
+	<item
+			android:id="@+id/action_schedules"
+			android:enabled="true"
+			android:icon="@mipmap/ic_launcher"
+			android:title="2nd option"
+			/>
+	<item
+			android:id="@+id/action_music"
+			android:enabled="true"
+			android:icon="@mipmap/ic_launcher"
+			android:title="3rd option"
+			/>
+</menu>

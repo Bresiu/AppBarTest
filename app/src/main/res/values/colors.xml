@@ -3,7 +3,8 @@
     <color name="colorPrimary">@color/JAPANESE_INDIGO</color>
     <color name="colorPrimaryDark">@color/DEEP_SPACE_SPARKLE</color>
     <color name="colorAccent">@color/BITTERSWEET</color>
-
+    <color name="divider">#AEB5BB</color>
+    <color name="background">#FCFCFD</color>
     <!-- https://coolors.co -->
     <!-- https://stories.uplabs.com/introduction-to-natural-palettes-9503bfeee3d5#.idmvclo9d -->
     <color name="JAPANESE_INDIGO">#2E3C43</color>

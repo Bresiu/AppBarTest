@@ -7,20 +7,18 @@ import android.view.animation.Transformation;
 
 public class AnimationUtils {
 
-	public static void collapse(final View collapseView, final View alphaView,
-			final int animationDuration, final AnimationEndListener animationEndListener) {
+	public static void collapse(final View collapseView, final int animationDuration) {
 		final int initialHeight = collapseView.getMeasuredHeight();
 		final Animation animation = new Animation() {
 			@Override
 			protected void applyTransformation(float interpolatedTime, Transformation transformation) {
 				if (interpolatedTime == 1) {
 					collapseView.setVisibility(View.GONE);
-					animationEndListener.onAnimationEnd(collapseView);
 					cancel();
 				} else {
+
 					collapseView.getLayoutParams().height =
 							initialHeight - (int) (initialHeight * interpolatedTime);
-					alphaView.setAlpha(1 - interpolatedTime);
 					collapseView.requestLayout();
 				}
 			}
@@ -28,21 +26,17 @@ public class AnimationUtils {
 			@Override public boolean willChangeBounds() {
 				return true;
 			}
-		};
-		animation.setInterpolator(new FastOutSlowInInterpolator());
+		}; animation.setInterpolator(new FastOutSlowInInterpolator());
 		animation.setDuration(animationDuration);
 		collapseView.startAnimation(animation);
 	}
 
-	//TODO: add start height
-	public static void expand(final View expandView, final int expandValue, int animationDuration,
-			final AnimationEndListener animationEndListener) {
+	public static void expand(final View expandView, final int expandValue, int animationDuration) {
 		Animation animation = new Animation() {
 			@Override protected void applyTransformation(float interpolatedTime, Transformation t) {
 				int startHeight = expandView.getLayoutParams().height;
 				if (interpolatedTime == 1) {
 					expandView.getLayoutParams().height = expandValue;
-					animationEndListener.onAnimationEnd(expandView);
 					cancel();
 				} else {
 					expandView.getLayoutParams().height =

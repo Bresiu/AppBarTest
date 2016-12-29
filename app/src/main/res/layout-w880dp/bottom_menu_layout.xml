@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.co	m/apk/res/android"
+    class="bresiu.com.appbarlayouttest.bottommenu.BottomMenu$BottomMenuViewContainer"
+    android:layout_width="@dimen/menu_max_width"
+    android:layout_height="560dp"
+    android:layout_gravity="top|center"/>
