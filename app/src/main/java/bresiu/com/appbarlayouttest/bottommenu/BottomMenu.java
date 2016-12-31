@@ -377,7 +377,7 @@ public final class BottomMenu {
             mElevation = elevation;
         }
 
-        private void initInnerContainer() {
+      private void initInnerContainer() {
             mContainer = new LinearLayout(getContext());
             mContainer.setOrientation(LinearLayout.VERTICAL);
             setCardBackgroundColor(ContextCompat.getColor(getContext(), R.color.background));

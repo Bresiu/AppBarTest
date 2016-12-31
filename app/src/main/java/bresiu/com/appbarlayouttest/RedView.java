@@ -41,7 +41,6 @@ public class RedView extends FrameLayout {
 		constraintSet.connect(view.getId(), ConstraintSet.START, root.getId(), ConstraintSet.START, 0);
 		constraintSet.connect(view.getId(), ConstraintSet.END, root.getId(), ConstraintSet.END, 0);
 		constraintSet.connect(view.getId(), ConstraintSet.TOP, root.getId(), ConstraintSet.TOP, 0);
-		constraintSet.connect(view.getId(), ConstraintSet.BOTTOM, root.getId(), ConstraintSet.BOTTOM, 0);
 		constraintSet.applyTo(root);
 
 		view.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.OCEAN_GREEN));
