@@ -11,7 +11,6 @@
 
 	<FrameLayout
 			android:id="@+id/blue_view"
-			android:visibility="gone"
 			android:background="@color/BLUE_SAPPHIRE"
 			android:layout_width="0dp"
 			android:layout_height="150dp"
@@ -32,7 +31,6 @@
 
 	<android.support.v7.widget.CardView
 			app:elevation="10dp"
-			android:visibility="gone"
 			app:cardBackgroundColor="@color/JELLY_BEAN"
 			android:layout_width="match_parent"
 			app:layout_constraintRight_toRightOf="parent"

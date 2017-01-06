@@ -7,7 +7,7 @@ import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import bresiu.com.appbarlayouttest.bottommenu.BottomMenu;
+import bresiu.com.appbarlayouttest.topmenu.TopMenu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,14 +23,11 @@ public class MainActivity extends AppCompatActivity {
 	@Override protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
-
 	}
 
 	@Override protected void onResume() {
 		super.onResume();
 		setContentView(R.layout.activity_main);
-
 
 		root = (ConstraintLayout) findViewById(R.id.activity_main);
 
@@ -90,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 									Log.d("BRES", "root.getHeight(): " + root.getHeight());
 									Log.d("BRES", "redView.getHeight(): " + redView.getHeight());
 									Log.d("BRES", "navigationBar.getHeight(): " + navigationBar.getHeight());
-									BottomMenu.make(root).show();
+									TopMenu.make(root).showView();
 								}
 							})
 							.start();
