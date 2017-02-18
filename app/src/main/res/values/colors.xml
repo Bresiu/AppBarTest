@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/JAPANESE_INDIGO</color>
-    <color name="colorPrimaryDark">@color/DEEP_SPACE_SPARKLE</color>
+    <color name="colorPrimary">@color/DEEP_SPACE_SPARKLE</color>
+    <color name="colorPrimaryDark">@color/JAPANESE_INDIGO</color>
     <color name="colorAccent">@color/BITTERSWEET</color>
     <color name="divider">#AEB5BB</color>
     <color name="background">#FCFCFD</color>
@@ -21,6 +21,4 @@
     <color name="JELLY_BEAN">#DB504A</color>
     <color name="SAFFRON">#F6AE2D</color>
     <color name="MIDNIGHT_GREEN">#084C61</color>
-
-
 </resources>

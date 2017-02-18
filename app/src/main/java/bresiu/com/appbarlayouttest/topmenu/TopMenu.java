@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import bresiu.com.appbarlayouttest.R;
 
 public final class TopMenu {
-	private static final int ANIMATION_DURATION = 800;
+	private static final int ANIMATION_DURATION = 700;
 	private final TopMenu.TopMenuViewContainer mView;
 	private final ViewGroup mTargetParent;
 

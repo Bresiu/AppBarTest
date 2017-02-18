@@ -6,7 +6,7 @@
 		android:id="@+id/activity_main"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="@color/SAFFRON"
+		android:background="@color/background"
 		tools:context="bresiu.com.appbarlayouttest.MainActivity">
 
 	<FrameLayout
@@ -30,7 +30,7 @@
 	</FrameLayout>
 
 	<android.support.v7.widget.CardView
-			app:elevation="10dp"
+			app:elevation="6dp"
 			app:cardBackgroundColor="@color/JELLY_BEAN"
 			android:layout_width="match_parent"
 			app:layout_constraintRight_toRightOf="parent"
